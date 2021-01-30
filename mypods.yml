@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: pod
+metadata:
+ name: hello-pod //Till this specification image belong to pod & below specification the image belong to container .
+ spec:
+ container:
+ - name: first-container
+   image: nginx
+   ports:
